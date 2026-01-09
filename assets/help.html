@@ -1,0 +1,42 @@
+<h1>📘 VobReel Guide</h1>
+<p>Modernize your DVD collection by batch-stitching <code>.VOB</code> files into playable <code>.MP4</code> videos.</p>
+
+<h2>1. Folder Setup</h2>
+<p>VobReel scans for folders named exactly <b>VIDEO_TS</b>.</p>
+
+<p><b>Required Structure:</b></p>
+<pre>
+/My_DVDs
+  /Wedding_Tape
+      /VIDEO_TS   <-- (VobReel looks here)
+  /Vacation_2004
+      /VIDEO_TS
+</pre>
+<p class="note">Tip: Select the top-level "My_DVDs" folder as your source.</p>
+
+<h2>2. Quality Settings</h2>
+
+<ul>
+    <li><b>Best Quality (CRF 18)</b><br>
+    Essential for <b>VHS transfers</b>. It preserves the analog "grain" ensuring the picture doesn't look plastic or blurry.</li>
+    
+    <li><b>Standard (CRF 20)</b><br>
+    The industry standard balance. Best for digital camcorder footage.</li>
+    
+    <li><b>Compact (CRF 23)</b><br>
+    High compression. Use this only if you need to email the files.</li>
+</ul>
+
+<h2>3. Audio Compatibility</h2>
+
+<div class="section-good">⬜ Unchecked (Recommended for Clients)</div>
+<p>Converts audio to <b>AAC</b>. Ensures video plays with sound on iPhones, Instagram, and Smart TVs.</p>
+
+<div class="section-warn">✅ Checked (Archival Only)</div>
+<p>Copies the original DVD audio (AC3). High quality, but sound <b>will fail</b> on most mobile devices.</p>
+
+<h2>4. Troubleshooting</h2>
+<ul>
+    <li><b>No Files Found:</b> Check that your subfolders are named <code>VIDEO_TS</code>.</li>
+    <li><b>FFmpeg Error:</b> Run the <b>Diagnostics</b> tab to verify software is installed.</li>
+</ul>

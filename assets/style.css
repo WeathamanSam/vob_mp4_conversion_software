@@ -1,0 +1,75 @@
+/* assets/style.css */
+
+/* --- Base Reset --- */
+body {
+    background-color: #1E1E1E; /* CRITICAL: Force Dark Background to fix stripes */
+    color: #E0E0E0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-size: 11pt;
+    line-height: 1.5;
+}
+
+/* --- Headers --- */
+h1 {
+    color: #4FC1FF; /* Bright Blue */
+    font-size: 22pt;
+    font-weight: normal;
+    text-decoration: underline;
+}
+
+h2 {
+    color: #DCDCAA; /* Soft Gold */
+    font-size: 16pt;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+/* --- Sections --- */
+.section-good {
+    color: #48BB78; /* Green */
+    font-weight: bold;
+    font-size: 12pt;
+    margin-top: 10px;
+}
+
+.section-warn {
+    color: #F56565; /* Red */
+    font-weight: bold;
+    font-size: 12pt;
+    margin-top: 10px;
+}
+
+/* --- Code & Paths --- */
+pre {
+    background-color: #111111; /* Slightly darker than body */
+    color: #9CDCFE;
+    padding: 10px;
+    font-family: monospace;
+    font-size: 10pt;
+    border-radius: 4px;
+    /* FIX: Prevents text from running off screen */
+    white-space: pre-wrap; 
+}
+
+code {
+    color: #CE9178; /* Orange */
+    font-family: monospace;
+}
+
+/* --- Lists --- */
+ul {
+    margin-left: 20px;
+    padding-left: 0px;
+}
+
+li {
+    color: #CCCCCC;
+    margin-bottom: 8px;
+}
+
+/* --- Helpers --- */
+.note {
+    color: #888888;
+    font-style: italic;
+}
